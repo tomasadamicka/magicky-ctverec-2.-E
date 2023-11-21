@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace magicky_ctverec
 {
     public partial class Form1 : Form
@@ -6,106 +8,113 @@ namespace magicky_ctverec
         {
             InitializeComponent();   
         }
-        int a = 0;
-        int b = 0;
-        int c =0;
-        int d =0;
-        int z = 0;
-        int f = 0;
-        int g = 0;
-        int h = 0;
-        int i = 0;
+      
 
-        int t = 0;
-        int[,] tlacitka = new int[3, 3];
+     
+        int[] cb = new int[9];
+        private void tlacitko(Button bt, int i )
+        {
+            cb[i]+=1;
+            if (cb[i] == 10)
+            {
+                cb[i] = 1;
+            }
+            bt.Text = cb[i].ToString();
+        }
+
         private void t1_Click(object sender, EventArgs e)
         {
-        a = a + 1;
-            if (a == 10)
-            {
-                a = 1;
-            }
-            t1.Text = a.ToString();
+            tlacitko(t1, 0);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            b = b + 1;
-            if (b == 10)
-            {
-                b = 1;
-            }
-            t2.Text = b.ToString();
+            tlacitko(t2, 1);
         }
 
         private void t3_Click(object sender, EventArgs e)
         {
-            c = c + 1;
-            if (c == 10)
-            {
-                c = 1;
-            }
-            t3.Text = c.ToString();
+            tlacitko(t3, 2);
         }
 
         private void t4_Click(object sender, EventArgs e)
         {
-            d = d + 1;
-            if (d == 10)
-            {
-                d = 1;
-            }
-            t4.Text = d.ToString();
+            tlacitko(t4, 3);
         }
 
         private void t5_Click(object sender, EventArgs e)
         {
-            z = z + 1;
-            if (z == 10)
-            {
-                z = 1;
-            }
-            t5.Text = z.ToString();
+            tlacitko(t5, 4);
         }
 
         private void t6_Click(object sender, EventArgs e)
         {
-            f = f + 1;
-            if (f == 10)
-            {
-                f = 1;
-            }
-            t6.Text = f.ToString();
+            tlacitko(t6, 5);
         }
 
         private void t7_Click(object sender, EventArgs e)
         {
-            g = g + 1;
-            if (g == 10)
-            {
-                g = 1;
-            }
-            t7.Text = g.ToString();
+            tlacitko(t7, 6);
         }
 
         private void t8_Click(object sender, EventArgs e)
         {
-            h = h + 1;
-            if (h == 10)
-            {
-                h = 1;
-            }
-            t8.Text = h.ToString();
+            tlacitko(t8, 7);
         }
 
         private void t9_Click(object sender, EventArgs e)
         {
-            i = i + 1;
-            if (i == 10)
+            tlacitko(t9, 8);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int soucet = 0;
+           
+            if (cb[0] + cb[1] + cb[2] == 15)
             {
-                i = 1;
+                soucet += 1;
             }
-            t9.Text = i.ToString();
+
+            if (cb[3] + cb[4] + cb[5] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[6] + cb[7] + cb[8] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[0] + cb[3] + cb[6] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[1] + cb[4] + cb[7] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[2] + cb[5] + cb[8] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[0] + cb[4] + cb[8] == 15)
+            {
+                soucet += 1;
+            }
+            if (cb[2] + cb[4] + cb[6] == 15)
+            {
+                soucet += 1;
+            }
+            
+
+            if (soucet==8)
+            {
+                tb1.Text = ("ok");
+            }
+            else
+            {
+                tb1.Text = ("SPATNE");
+            }
+
         }
     }
 }
