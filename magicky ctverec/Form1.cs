@@ -71,7 +71,8 @@ namespace magicky_ctverec
         private void button1_Click(object sender, EventArgs e)
         {
             int soucet = 0;
-           
+            int soucet2 = 0;
+
             if (cb[0] + cb[1] + cb[2] == 15)
             {
                 soucet += 1;
@@ -105,7 +106,46 @@ namespace magicky_ctverec
             {
                 soucet += 1;
             }
-            
+
+            //
+
+            if (cb[0] == 5)
+            {
+                soucet2 += 10;
+            }
+
+            if (cb[1] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[2] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[3] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[4] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[5] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[6] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[7] == 5)
+            {
+                soucet2 += 10;
+            }
+            if (cb[8] == 5)
+            {
+                soucet2 += 10;
+            }
 
             if (soucet==8)
             {
@@ -114,6 +154,10 @@ namespace magicky_ctverec
             else
             {
                 tb1.Text = ("SPATNE");
+            }
+            if (soucet2 == 90)
+            {
+                tb1.Text = ("jsi debil");
             }
 
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.t1 = new System.Windows.Forms.Button();
             this.t3 = new System.Windows.Forms.Button();
             this.t2 = new System.Windows.Forms.Button();
@@ -43,15 +44,22 @@
             // 
             // t1
             // 
+            this.t1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.t1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("t1.BackgroundImage")));
+            this.t1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.t1.Location = new System.Drawing.Point(178, 117);
             this.t1.Name = "t1";
             this.t1.Size = new System.Drawing.Size(75, 75);
             this.t1.TabIndex = 0;
-            this.t1.UseVisualStyleBackColor = true;
+            this.t1.UseVisualStyleBackColor = false;
             this.t1.Click += new System.EventHandler(this.t1_Click);
             // 
             // t3
             // 
+            this.t3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("t3.BackgroundImage")));
+            this.t3.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.t3.Location = new System.Drawing.Point(340, 117);
             this.t3.Name = "t3";
             this.t3.Size = new System.Drawing.Size(75, 75);
@@ -61,24 +69,33 @@
             // 
             // t2
             // 
+            this.t2.BackColor = System.Drawing.Color.Maroon;
+            this.t2.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.t2.Location = new System.Drawing.Point(259, 117);
             this.t2.Name = "t2";
             this.t2.Size = new System.Drawing.Size(75, 75);
             this.t2.TabIndex = 2;
-            this.t2.UseVisualStyleBackColor = true;
+            this.t2.UseVisualStyleBackColor = false;
             this.t2.Click += new System.EventHandler(this.button2_Click);
             // 
             // t6
             // 
+            this.t6.BackColor = System.Drawing.Color.Maroon;
+            this.t6.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.t6.Location = new System.Drawing.Point(340, 193);
             this.t6.Name = "t6";
             this.t6.Size = new System.Drawing.Size(75, 75);
             this.t6.TabIndex = 3;
-            this.t6.UseVisualStyleBackColor = true;
+            this.t6.UseVisualStyleBackColor = false;
             this.t6.Click += new System.EventHandler(this.t6_Click);
             // 
             // t5
             // 
+            this.t5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("t5.BackgroundImage")));
+            this.t5.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.t5.Location = new System.Drawing.Point(259, 193);
             this.t5.Name = "t5";
             this.t5.Size = new System.Drawing.Size(75, 75);
@@ -88,15 +105,21 @@
             // 
             // t4
             // 
+            this.t4.BackColor = System.Drawing.Color.Maroon;
+            this.t4.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.t4.Location = new System.Drawing.Point(178, 193);
             this.t4.Name = "t4";
             this.t4.Size = new System.Drawing.Size(75, 75);
             this.t4.TabIndex = 5;
-            this.t4.UseVisualStyleBackColor = true;
+            this.t4.UseVisualStyleBackColor = false;
             this.t4.Click += new System.EventHandler(this.t4_Click);
             // 
             // t9
             // 
+            this.t9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("t9.BackgroundImage")));
+            this.t9.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.t9.Location = new System.Drawing.Point(340, 269);
             this.t9.Name = "t9";
             this.t9.Size = new System.Drawing.Size(75, 75);
@@ -106,15 +129,21 @@
             // 
             // t8
             // 
+            this.t8.BackColor = System.Drawing.Color.Maroon;
+            this.t8.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.t8.Location = new System.Drawing.Point(259, 269);
             this.t8.Name = "t8";
             this.t8.Size = new System.Drawing.Size(75, 75);
             this.t8.TabIndex = 7;
-            this.t8.UseVisualStyleBackColor = true;
+            this.t8.UseVisualStyleBackColor = false;
             this.t8.Click += new System.EventHandler(this.t8_Click);
             // 
             // t7
             // 
+            this.t7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("t7.BackgroundImage")));
+            this.t7.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.t7.Location = new System.Drawing.Point(178, 269);
             this.t7.Name = "t7";
             this.t7.Size = new System.Drawing.Size(75, 75);
