@@ -1,3 +1,4 @@
+//TA INC.//
 using System.Globalization;
 
 namespace magicky_ctverec
@@ -118,3 +119,4 @@ namespace magicky_ctverec
         }
     }
 }
+//TA INC. C Tomáš Adamièka//
